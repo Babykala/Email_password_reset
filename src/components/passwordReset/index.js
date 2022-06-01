@@ -9,7 +9,7 @@ const PasswordReset = () => {
 	const [msg, setMsg] = useState("");
 	const [error, setError] = useState("");
 	const param = useParams();
-	const url = `https://email-password-reset.herokuapp.com/api/password-reset/${param.id}/${param.token}`;
+	const url = `https://localhost:8080/api/password-reset/${param.id}/${param.token}`;
 
 	useEffect(() => {
 		const verifyUrl = async () => {
